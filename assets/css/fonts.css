@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/NeueMachina-Light.woff') format('woff');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/NeueMachina-Regular.woff') format('woff');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/NeueMachina-Ultrabold.woff') format('woff');
+    font-weight: 700;
+  }
+
+
+  /* tit  */
+  @font-face {
+    font-family: 'Catamaran', sans-serif;
+    src: url('../fonts/Catamaran-Light.ttf') format('ttf');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Catamaran', sans-serif;
+    src: url('../fonts/Catamaran-Regular.ttf') format('ttf');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Catamaran', sans-serif;
+    src: url('../fonts/Catamaran-Medium.ttf') format('ttf');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Catamaran', sans-serif;
+    src: url('../fonts/Catamaran-Bold.ttf') format('ttf');
+    font-weight: 700;
+  }

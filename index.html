@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Virtual Museum</title>
+
+    <!-- <link rel="stylesheet" href="./layout.css"> 임포트
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css"> -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link href="https://assets.website-files.com/6193c9dbb809764879877eec/6194ee8f0d84192afb9d0656_favicon.jpg" rel="shortcut icon" type="image/x-icon"/>
+    <link href="https://assets.website-files.com/6193c9dbb809764879877eec/6194ee9416883d60478cfc12_webclip.jpg" rel="apple-touch-icon"/>
+
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+</head>
+
+<!-- how to mark-up   
+        section, header, footer [상위요소] // section : sc-000 /section-000 / main : main-000
+            .group-000
+                .000-area
+                    .000-wrap
+                        .000-box
+        ul : 000-list
+            li : 000-item
+-->
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="inner">
+                <div class="group-flex">
+                    <div class="group-left">
+                        <h1 class="logo">
+                            <a href="">
+                                <!-- <span class="blind">로고</span> -->
+                                <img src="./assets/images/logo/logo.svg" alt="대림뮤지엄">
+                            </a>
+                        </h1>
+                    </div>
+                    <nav class="gnb-area">
+                        <a class="underline" href="#sec01">VIRTUAL MUSEUM</a>
+                        <a class="underline" href="#sec02">EXPOSITION</a>
+                        <a class="underline" href="#sec03">ABOUT</a>
+                        <a class="underline" href="#sec04">AUDIO GUIDE</a>
+                    </nav>
+                    <div class="group-right">
+                        <a href="" class="login modal underline" role="button">login</a>
+                        <a href="" class="btn modal sign" role="button">sign up</a>
+                    </div>
+                    <div class="group-hamburger">
+                        <a href="" class="btn-hamburger">
+                            <span class="blind">메뉴</span>
+                        </a>
+                        <button type="button" class="btn-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            
+            <section id="sec01" class="sc-hero">
+                <div class="inner">
+                    <div class="group-elements">
+                        <div class="elements-area">
+                            <div class="hero-elem elem01">
+                                <div class="circle-wrap circle01"></div>
+                                <div class="circle-wrap circle02"></div>
+                            </div>
+                            <img class="hero-elem elem02" src="./assets/images/main/hero-elem02.png" alt>
+                            <div class="hero-elem elem03 dssh"></div>
+                            <div class="hero-elem elem04 dot-circle"></div>
+                            <div class="hero-elem elem05 orange-square"></div>
+                            <div class="hero-elem elem06 dot-square"></div>
+                            <div class="hero-elem elem07">
+                                <div class="circle-pink-top"></div>
+                            </div>
+                            <div class="hero-elem elem08">
+                                <div class="border-square"></div>
+                            </div>
+                            <div class="hero-elem elem09 dot-square"></div>
+                            <div class="hero-elem elem10 dot-circle"></div>
+                            <div class="hero-elem elem11">
+                                <div class="circle-right"></div>
+                            </div>
+                            <div class="hero-elem elem12 dot-circle"></div>
+                            <img class="hero-elem elem13" src="./assets/images/main/hero-elem12.png" alt="">
+                            <div class="hero-elem elem14"></div>
+                        </div>
+                    </div>
+                    <div class="group-text">
+                        <strong class="sub-tit">VIRTUAL MUSEUM</strong>
+                        <h2 class="tit-wrap">
+                            <span class="tit01">Mankind</span><br>
+                            <span class="dash tit02">&nbsp;</span>
+                            <span class="tit03">history</span><br>
+                            <span class="tit04">explained</span>
+                        </h2>
+                        <a href="" class="btn trial modal">
+                            <span>START FREE TRIAL</span>
+                            <i class="btn-arrow"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+             
+            </section>
+
+            <section id="sec02" class="sc-visit">
+                <!-- @ 추가해야댐   -->
+                <div class="bg-shine shine01"></div>
+                <div class="inner">
+                    <div class="group-content">
+                        <h2 class="tit tit-visit">Visit our<br>exposition
+                        </h2>
+                        <ul class="card-list">
+                            <li class="card-item card01 modal">
+                                <a href="">
+                                    <p>FROM ANTIQUITY TO MODERN</p>
+                                    <div class="tit-area">
+                                        <strong class="sub-tit">Ancient <br> Greece</strong>
+                                        <i class="btn-play"></i>
+                                    </div>
+                                    <div class="elements-area">
+                                        <img class="visit-elem01" src="./assets/images/main/visit-elem01.svg" alt>
+                                        <img class="visit-elem02" src="./assets/images/main/visit-elem02.png" alt>
+                                        <div class="visit-elem03 blue-square"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item">
+                                <em class="label orange">anytime</em>
+                                <strong class="item-tit">Available 24/7</strong>
+                                <p class="desc">The permanent exhibition includes two main sections</p>
+                            </li>
+                            <li class="card-item">
+                                <em class="label sky">new</em>
+                                <strong class="item-tit">Songs of the Sky</strong>
+                                <p class="desc"> The permanent collection contains over 4,200 artifacts
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="bg-circle">
+                    <img src="https://assets.website-files.com/6193c9dbb809764879877eec/61a9ebc049142b283bcbcb38_bg_shine-01.png">
+                </div>
+
+
+            </section>
+
+            <section id="sec03" class="sc-media">
+                <div class="inner">
+                    <div class="group-content">
+                        <div class="border-area"></div>
+                        <div class="illustr-area">
+                            <img src="./assets/images/main/media-illustr.png" alt="">
+                        </div>
+                        <h2 class="tit-wrap">
+                            <span class="tit01">Media</span><br>
+                            <span class="tit02">& history</span><br>
+                            <span class="tit03">combined</span>
+                        </h2>
+                        <div class="desc-wrap">
+                            <p class="desc">A gallery in the permanent exhibition displays many statues of celebrities from the Classical period. These statues include Alexander the Great, other great figures in Ancient history.
+                            </p>
+                            <a href="" class="btn modal">read more</a>
+                        </div>
+                        <div class="media-elem01">
+                            <img src="./assets/images/main/media-elem01.png" alt="">
+                        </div>
+                        <div class="media-elem02">
+                            <div class="dash-yellow"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sec04" class="sc-audio">
+                <div class="inner">
+                    <div class="bg-shine shine02"></div>
+                    <div class="group-tit">
+                        <h2 class="tit">Audio Guide</h2>
+                        <p class="sub-tit">INTRODUCTION</p>
+                    </div>
+                    <ul class="audio-list">
+                        <li class="audio-item">
+                            <div class="label-area">
+                                <div class="float-wrap">
+                                    <img src="./assets/images/main/audio01.png" alt="">
+                                </div>
+                                <div class="label-wrap">
+                                    <img class="icon-label" src="./assets/images/icon/audio-label01.svg" alt="">
+                                    <em class="label">building</em>
+                                </div>
+                            </div>
+                            <div class="tit-area">
+                                <h3>Acropolis of Athens</h3>
+                            </div>
+                            <div class="txt-area">
+                                <p class="desc-wrap">
+                                    The Acropolis has been traditionally considered a national and cultural symbol of Greece, but in 1995 a cultural heritage organisation filed a lawsuit in an attempt to have the whole monument classified.
+                                </p>
+                                <div class="period-wrap">
+                                    <span class="period">YEAR: 530 BC</span>
+                                    <span class="period">TIME: 22 MIN</span>
+                                </div>
+                            </div>
+                            <div class="play-area">
+                                <a href="" class="btn-play"><span class="blind">재생버튼</span></a>
+                            </div>
+                        </li>
+                        <li class="audio-item">
+                            <div class="label-area">
+                                <div class="float-wrap">
+                                    <img src="./assets/images/main/audio02.png" alt="">
+                                </div>
+                                <div class="label-wrap">
+                                    <img class="icon-label" src="./assets/images/icon/audio-label02.svg" alt="">
+                                    <span class="label">sculpture</span>
+                                </div>
+                            </div>
+                            <div class="tit-area">
+                                <h3>Athenian Vase Painting</h3>
+                            </div>
+                            <div class="txt-area">
+                                <p class="desc-wrap">In Greek pottery, simple shapes and design motifs convey formalised ideas of harmony and purity. Many mythological and religious symbols appear on pots, usually with particular emphasis on the heads, feet.</p>
+                                <div class="period-wrap">
+                                    <div class="period">YEAR: 530 BC</div>
+                                    <div class="period">TIME: 22 MIN</div>
+                                </div>
+                            </div>
+                            <div class="play-area">
+                                <a href="" class="btn-play"><span class="blind">재생버튼</span></a>
+                            </div>
+                        </li>
+                        <li class="audio-item">
+                            <div class="label-area">
+                                <div class="float-wrap">
+                                    <img src="./assets/images/main/audio03.png" alt="">
+                                </div>
+                                <div class="label-wrap">
+                                    <img class="icon-label" src="./assets/images/icon/audio-label03.svg" alt="">
+                                    <span class="label">philosophy</span>
+                                </div>
+                            </div>
+                            <div class="tit-area">
+                                <h3>Socrates: Life & Philosophy</h3>
+                            </div>
+                            </h3>
+                            <div class="txt-area">
+                                <p class="desc-wrap">Socrates appeared as a character in a number of literary works, ranging from humorous satires, to tragedies and historical romances. The character most closely resembling the Socrates of ancient Athens.</p>
+                                <div class="period-wrap">
+                                    <div class="period">YEAR: 530 BC</div>
+                                    <div class="period">TIME: 22 MIN</div>
+                                </div>
+                            </div>
+                            <div class="play-area">
+                                <a href="" class="btn-play"><span class="blind">재생버튼</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="group-more">
+                        <a href="" class="btn modal">read more</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="group-float">
+                <div class="footer-elem01"></div>
+            </div>
+            <div class="inner">
+                <div class="flex-area">
+                    <div class="tit-wrap">
+                        <h2 class="logo">
+                            <a href="">
+                                <!-- <span class="blind">로고</span> -->
+                                <img src="./assets/images/logo/logo.svg" alt="">
+                            </a>
+                        </h2>
+                        <p class="tit">
+                            . . . <br>
+                            ENJOY THE ARTS <br>
+                            AND GREECE HISTORY
+                        </p>
+                    </div>
+                    <div class="list-wrap">
+                        <nav class="fnb">
+                            <a class="underline" href="#sec01">MUSEUM</a>
+                            <a class="underline" href="#sec02">EXPOSITION</a>
+                            <a class="underline" href="#sec03">ABOUT</a>
+                            <a class="underline" href="#sec04">AUDIO</a>
+                        </nav>
+                        <div class="sns-box">
+                            <a href="" class="link-sns">
+                                <!-- <span class="blind">페이스북</span> -->
+                                <img src="./assets/images/icon/sns-facebook.svg" alt="페이스북">
+                            </a>
+                            <a href="" class="link-sns">
+                                <!-- <span class="blind">behance</span> -->
+                                <img src="./assets/images/icon/sns-behance.svg" alt="behance">
+                            </a>
+                            <a href="" class="link-sns-in">
+                                <!-- <span class="blind">링크드인</span> -->
+                                <img src="./assets/images/icon/sns-linkedin.svg" alt="링크드인">
+                            </a>
+                            <a href="" class="link-sns">
+                                <!-- <span class="blind">인스타그램</span> -->
+                                <img src="./assets/images/icon/sns-instagram.svg" alt="인스타그램">
+                            </a>
+                            <a href="" class="link-sns">
+                                <!-- <span class="blind">dribble</span> -->
+                                <img src="./assets/images/icon/sns-dribbble.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subscribe-wrap">
+                        <p class="intro">
+                            BE THE FIRST TO HEAR <br>
+                            VIRTUAL SMART-MUSEUM NEWS
+                        </p>
+                        <form action="" method="get">
+                            <fieldset>
+                                <legend class="blind">e-mail</legend>
+                                <div class="wrap">
+                                    <input type="text" placeholder="E-MAIL" required>
+                                    <!-- <div class="footer-email alert">
+                                        <i class="exclamation"></i>
+                                        <p>이 입력란을 작성하세요.</p>
+                                    </div> -->
+                                </div>
+                                <button type="submit" class="btn checked" aria-label="전송">
+                                    <i class="footer-checked"></i>
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="sns-box mob">
+                    <a href="" class="facebook">
+                        <span class="blind">페이스북</span>
+                        <img src="./assets/images/icon/sns-facebook.svg" alt="">
+                    </a>
+                    <a href="" class="behance">
+                        <span class="blind">behance</span>
+                        <img src="./assets/images/icon/sns-behance.svg" alt="">
+                    </a>
+                    <a href="" class="linked-in">
+                        <span class="blind">링크드인</span>
+                        <img src="./assets/images/icon/sns-linkedin.svg" alt="">
+                    </a>
+                    <a href="" class="instagram">
+                        <span class="blind">인스타그램</span>
+                        <img src="./assets/images/icon/sns-instagram.svg" alt="">
+                    </a>
+                    <a href="" class="dribble">
+                        <span class="blind">dribble</span>
+                        <img src="./assets/images/icon/sns-dribbble.svg" alt="">
+                    </a>
+                </div>
+                <a href="" class="copyright-area">
+                    <img src="./assets/images/logo/copyright.svg" alt="">
+                    <p>2021 HALO LAB © ALL RIGHTS RESERVED</p>
+                </a>
+            </div>
+            <div class="group-elements">
+                <img class="footer-elem elem01" src="./assets/images/common/footer-hand.png" alt="">
+                <img class="footer-elem elem02" src="./assets/images/common/footer-rectangle.png" alt="">
+                <div class="mob-footer-elem">
+                    <img class="elem03" src="./assets/images/common/footer-hand.png" alt="">
+                </div>
+            </div>
+            <div class="group-follow">
+                <div class="txt-area">
+                    <div class="mob-top">
+                        <i class="icon-heart"></i>
+                        <a href="">LIKE</a>
+                        <span class="and">  &nbsp;&&nbsp;</span>
+                        <a href="">FOLLOW</a>
+                        &nbsp;<span>FROM YOU.&nbsp;</span>
+                    </div>
+                    <div class="mob-btm">
+                        <span>NEW FREE TO USE PROJECTS FROM US.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- modal : sign-up  -->
+        <section class="sc-modal">
+            <div class="group-modal">
+                <button type="button" class="btn-close"></button>
+                <img src="./assets/images/common/modal-illustr.png" alt="">
+                <div class="txt-area">
+                    <div class="subscribe-wrap">
+                        <p class="tit">Subscribe to our newsleter</p>
+                        <p class="desc">Get weekly updates on the newest cloneable websites right in your mailbox.</p>
+                    </div>
+                    <div class="email-wrap">
+                        <form action="" method="get">
+                            <fieldset>
+                                <legend class="blind">emaill address</legend>
+                                <div class="wrap">
+                                    <input type="email" placeholder="Email address" required>
+                                    <button type="submit" class="modal-checked checked">
+                                        <i class="checked"></i>
+                                    </button>
+                                    <div class="modal-email alert">
+                                        <i class="exclamation"></i>
+                                        <p>이 입력란을 작성하세요.</p>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="accodian-menu">
+            <div class="inner">
+                <nav class="gnb-area">
+                    <a class="underline" href="#sec01">VIRTUAL MUSEUM<i class="arrow-hover"></i></a>
+                    <a class="underline" href="#sec02">EXPOSITION<i class="arrow-hover"></i></a>
+                    <a class="underline" href="#sec03">ABOUT<i class="arrow-hover"></i></a>
+                    <a class="underline" href="#sec04">AUDIO GUIDE<i class="arrow-hover"></i></a>
+                </nav>
+                <div class="group-right">
+                    <a href="" class="login modal underline">login</a>
+                    <a href="" class="btn modal">sign up</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
